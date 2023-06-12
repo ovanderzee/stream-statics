@@ -7,6 +7,13 @@
 - ETag, Content-Length and other headers
 
 
+## [0.3.0]
+
+### Changed
+- Node command to generate https key and certificate
+- Simplified demo
+
+
 ## [0.2.0] - 2023-06-08
 
 ### Added

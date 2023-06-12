@@ -9,11 +9,10 @@ This way the number of dependencies is limited.
 
 ## Preparation
 For secure serving you need a private key and a certificate.
-Run the following shellscript from the depending project root
-and generate these:
+Have stst-cert to generate these and update your ignore file:
 
 ```sh
-./node_modules/stream-statics/makeCert.sh
+stst-cert
 ```
 
 ## Usage

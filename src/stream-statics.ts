@@ -16,8 +16,8 @@ const defaultConfig: {root: string, protocol: 'http' | 'https' | 'http2', port: 
 }
 
 const secureOptions: {key: Buffer, cert: Buffer} = {
-    key: fs.readFileSync('.stst-key.pem'),
-    cert: fs.readFileSync('.stst-crt.pem'),
+    key: fs.readFileSync('.localhost.key'),
+    cert: fs.readFileSync('.localhost.crt'),
 }
 
 /*

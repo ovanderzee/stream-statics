@@ -5,7 +5,8 @@
   "main": "./lib/stream-statics.js",
   "bin": {
     "stream-statics": "./cli.js",
-    "stst": "./cli.js"
+    "stst": "./cli.js",
+    "stst-cert": "./cert.js"
   },
   "scripts": {
     "build": "cf lib && tsc --resolveJsonModule",
