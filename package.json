@@ -9,7 +9,7 @@
     "ststop": "stop.js"
   },
   "scripts": {
-    "build": "rm -rf build && tsc --resolveJsonModule",
+    "build": "tsc --resolveJsonModule",
     "pretest": "npm run build",
     "test": "c8 -r text node build/__tests__/test.js"
   },
