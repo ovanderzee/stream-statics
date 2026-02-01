@@ -35,3 +35,5 @@ jobs:
             - run: npm cache verify
             - run: npm install -g npm@latest
             - run: npm publish --provenance --verbose
+            env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
