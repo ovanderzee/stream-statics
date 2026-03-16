@@ -8,7 +8,13 @@
 
 
 
-## [0.7.x]
+## [0.7.1] 2026-03-16
+
+### Fixed
+- Fix self containing cli argument
+
+
+## [0.7.0.x]
 
 ### Added
 - Build and publish with github actions

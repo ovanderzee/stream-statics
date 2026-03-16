@@ -23,14 +23,16 @@ if (process.argv && process.argv.length >= 2) {
         if (cliArgs[i].startsWith('--')) {
             const arg = cliArgs[i].replace(/^--/, '')
 
+            // with key-value pairs, like --port 1234
             switch (cliArgs[i + 1] && arg) {
                 case 'port':
                     killServer(Number(cliArgs[i + 1]))
                     break
-                default:
-                    if (spotPort(arg)) {
-                        killServer(Number(arg))
-                    }
+            }
+
+            // containing value, --1234 as port
+            if (spotPort(arg)) {
+                killServer(Number(arg))
             }
         }
     }
