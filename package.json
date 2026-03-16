@@ -1,6 +1,6 @@
 {
   "name": "stream-statics",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Development server for testing and demonstrating front-end projects.",
   "main": "./build/stream-statics.js",
   "bin": {
@@ -30,14 +30,14 @@
   ],
   "author": "Onno van der Zee",
   "license": "ISC",
+  "dependencies": {
+    "@types/node": "^24",
+    "detect-port": "^1.5.1"
+  },
   "devDependencies": {
     "@types/detect-port": "^1.3.5",
     "@types/mime-types": "^2.1.4",
     "c8": "^10.1.3",
     "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "@types/node": "^24",
-    "detect-port": "^1.5.1"
   }
 }
