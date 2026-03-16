@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { spawnSync } from 'child_process'
 import { spotPort } from './build/configuration.js'
 
