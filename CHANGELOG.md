@@ -10,6 +10,9 @@
 
 ## [0.7.1] 2026-03-16
 
+### Added
+- Prevent file caching
+
 ### Fixed
 - Fix self containing cli argument
 

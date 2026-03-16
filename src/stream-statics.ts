@@ -107,6 +107,12 @@ const serveResources = async function (
                 logNote(`No Content-Type found for ${request.url}`)
             }
 
+            // force expiry
+            const expiresAt = new Date(0)
+            response.setHeader('Expires', expiresAt.toUTCString())
+            response.setHeader('Cache-Control', 'NO-CACHE')
+            response.setHeader('Pragma', 'NO-CACHE')
+
             const fileStream = fs.createReadStream(absolutePath);
 
             response.writeHead(200)

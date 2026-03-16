@@ -91,6 +91,11 @@ response // http.ServerResponse | http2.Http2ServerResponse,
             else {
                 logNote(`No Content-Type found for ${request.url}`);
             }
+            // force expiry
+            const expiresAt = new Date(0);
+            response.setHeader('Expires', expiresAt.toUTCString());
+            response.setHeader('Cache-Control', 'NO-CACHE');
+            response.setHeader('Pragma', 'NO-CACHE');
             const fileStream = fs.createReadStream(absolutePath);
             response.writeHead(200);
             await outputStream(fileStream, response);
