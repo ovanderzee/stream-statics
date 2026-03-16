@@ -7,7 +7,22 @@
 - Default one-liners for open and close connections
 
 
-## [0.6.1]
+
+## [0.7.x]
+
+### Added
+- Build and publish with github actions
+- Trigger action using version tag
+
+
+## [0.7.0] 2026-02-01
+
+### Changed
+- Descriptions in stop script
+- Remove excessive dependencies
+
+
+## [0.6.1] 2024-10-23
 
 ### Added
 - Describe browser behaviour on protocols and certificates
