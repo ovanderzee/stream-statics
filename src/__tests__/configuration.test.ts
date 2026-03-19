@@ -45,7 +45,7 @@ describe('Spot portnumber', () => {
         )
     })
 
-    it('should anything except numbers', () => {
+    it('should reject anything except numbers', () => {
         const value = 'hundred'
         const spot = cfg.spotPort(value as unknown as number)
 

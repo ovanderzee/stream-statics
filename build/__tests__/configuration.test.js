@@ -23,7 +23,7 @@ describe('Spot portnumber', () => {
         const spot = cfg.spotPort(value);
         assert(!spot, `${value} should be to disapproved`);
     });
-    it('should anything except numbers', () => {
+    it('should reject anything except numbers', () => {
         const value = 'hundred';
         const spot = cfg.spotPort(value);
         assert(!spot, `${value} should be to disapproved`);

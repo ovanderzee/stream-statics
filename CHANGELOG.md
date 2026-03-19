@@ -5,10 +5,10 @@
 - Unit tests
 - ETag, Content-Length and other headers
 - Default one-liners for open and close connections
+- Use Nock and Sinon to test
 
 
-
-## [0.7.1] 2026-03-16
+## [0.7.1] 2026-03-24
 
 ### Added
 - Prevent file caching
