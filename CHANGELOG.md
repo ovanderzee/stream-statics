@@ -13,6 +13,7 @@
 ### Added
 - Prevent file caching
 - CORS headers
+- Handle encoded paths
 
 ### Fixed
 - Fix self containing cli argument

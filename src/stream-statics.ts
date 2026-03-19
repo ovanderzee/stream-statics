@@ -89,7 +89,7 @@ const serveResources = async function (
     try {
         const locator: url.URL = new url.URL(request.url, `http://localhost:${this.port}`)
 
-        absolutePath = path.resolve(this.root + locator.pathname)
+        absolutePath = decodeURI(path.resolve(this.root + locator.pathname))
 
         // cors
         response.setHeader('Access-Control-Allow-Origin', '*');

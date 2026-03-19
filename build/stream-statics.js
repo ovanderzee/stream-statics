@@ -77,7 +77,7 @@ response // http.ServerResponse | http2.Http2ServerResponse,
     let absolutePath = '';
     try {
         const locator = new url.URL(request.url, `http://localhost:${this.port}`);
-        absolutePath = path.resolve(this.root + locator.pathname);
+        absolutePath = decodeURI(path.resolve(this.root + locator.pathname));
         // cors
         response.setHeader('Access-Control-Allow-Origin', '*');
         response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
