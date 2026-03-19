@@ -78,6 +78,10 @@ response // http.ServerResponse | http2.Http2ServerResponse,
     try {
         const locator = new url.URL(request.url, `http://localhost:${this.port}`);
         absolutePath = path.resolve(this.root + locator.pathname);
+        // cors
+        response.setHeader('Access-Control-Allow-Origin', '*');
+        response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
         if (isExistent(absolutePath)) {
             // check for alternative index files
             if (isDirectory(absolutePath)) {

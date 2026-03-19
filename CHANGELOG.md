@@ -12,6 +12,7 @@
 
 ### Added
 - Prevent file caching
+- CORS headers
 
 ### Fixed
 - Fix self containing cli argument
